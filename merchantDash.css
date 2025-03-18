@@ -1,0 +1,37 @@
+:root{
+    --white: #ffffff;
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+    height: 90vh;
+}
+
+.topTitle{
+    text-align: center;
+}
+
+form div{
+    width: 100%;
+}
+
+/*Excludes certain div from being modified*/
+form div:not(.div-merchType) input{
+    display: inline;
+    width: 100%;
+}
+
+.div-album,.div-pc,.div-lightstick{
+    display: flex;
+    flex-direction: column;
+}
+.button{
+    display: flex;
+    justify-content: center;
+}
