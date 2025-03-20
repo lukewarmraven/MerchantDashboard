@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Merchant Dashboard</title>
     <link rel="stylesheet" href="merchantDash.css">
-    <script src="merchantDash.js"></script>
+    <script src="merchantDash.js" defer></script>
 </head>
 <body>
     <div class="topTitle">
@@ -16,6 +16,7 @@
     - itemName
     - price
     - quantity(customer)/stock(inventory)
+    - group, year, img
     - merch type: album, pc, lightstick
     - then merch specific questions below
 
@@ -29,6 +30,10 @@
             <div class="div-price">
                 <label for="price" class="price">Price: </label>
                 <input type="text" name="price" id="price" placeholder="Enter price...">
+            </div>
+            <div class="div-quantity">
+                <label for="quantity" class="quantity">Quantity: </label>
+                <input type="number" name="quantity" id="quantity" placeholder="Enter quantity...">
             </div>
             <div class="div-group">
                 <label for="group" class="group">Group: </label>
@@ -45,10 +50,10 @@
             
             <div class="div-merchType">
                 <label for="merchType" id="merchType">Merch Type: </label>
-                <input type="radio" name="merchType" id="merchType1" value="album" >
+                <input type="radio" name="merchType" id="merchType1" value="album" checked>
                 <label for="merchType1">Album</label>
 
-                <input type="radio" name="merchType" id="merchType2" value="photocard" checked>
+                <input type="radio" name="merchType" id="merchType2" value="photocard" >
                 <label for="merchType2">Photocard</label>
 
                 <input type="radio" name="merchType" id="merchType3" value="lightstick">

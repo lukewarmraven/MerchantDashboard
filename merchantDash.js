@@ -1,3 +1,4 @@
+// dynamically change the following questions based on the option chosen
 function merchTypeOptions(){
     var merchType = document.querySelector('input[name="merchType"]:checked').value;
     var changeDiv = document.getElementById("changeByOption");
@@ -36,3 +37,8 @@ function merchTypeOptions(){
 // makes sure that the function is executed instead of using onclick in the html
 document.addEventListener("DOMContentLoaded",merchTypeOptions);
 document.addEventListener("change",merchTypeOptions);
+
+
+
+
+
