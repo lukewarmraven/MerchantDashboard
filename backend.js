@@ -7,6 +7,15 @@ const pool = mysql.createPool({
     database:'merchantdash'
 }).promise();
 
+async function getItems(){
+    // stores the first item in the returned array and store it in another array in result
+    const [result] = await pool.query("select * from itemtable;");
+    return result;
+}
+
+const items = await getItems();
+console.log(items);
+
 
 
 // var mysql = require('mysql');
